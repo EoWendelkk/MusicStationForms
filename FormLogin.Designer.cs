@@ -29,16 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bttnEntrar = new System.Windows.Forms.Button();
+            this.lblEsquceuSenha = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.lblemail = new System.Windows.Forms.Label();
             this.txtBoxSenha = new System.Windows.Forms.TextBox();
             this.txtBoxUsuario = new System.Windows.Forms.TextBox();
             this.lblLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblemail = new System.Windows.Forms.Label();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.lblEsquceuSenha = new System.Windows.Forms.Label();
-            this.bttnEntrar = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -51,10 +55,59 @@
             this.panel1.Controls.Add(this.txtBoxSenha);
             this.panel1.Controls.Add(this.txtBoxUsuario);
             this.panel1.Controls.Add(this.lblLogin);
-            this.panel1.Location = new System.Drawing.Point(240, 113);
+            this.panel1.Location = new System.Drawing.Point(243, 144);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(299, 260);
             this.panel1.TabIndex = 0;
+            // 
+            // bttnEntrar
+            // 
+            this.bttnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.bttnEntrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bttnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnEntrar.Location = new System.Drawing.Point(110, 207);
+            this.bttnEntrar.Name = "bttnEntrar";
+            this.bttnEntrar.Size = new System.Drawing.Size(84, 23);
+            this.bttnEntrar.TabIndex = 8;
+            this.bttnEntrar.Text = "ENTRAR";
+            this.bttnEntrar.UseVisualStyleBackColor = false;
+            // 
+            // lblEsquceuSenha
+            // 
+            this.lblEsquceuSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblEsquceuSenha.AutoSize = true;
+            this.lblEsquceuSenha.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsquceuSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblEsquceuSenha.Location = new System.Drawing.Point(28, 176);
+            this.lblEsquceuSenha.Name = "lblEsquceuSenha";
+            this.lblEsquceuSenha.Size = new System.Drawing.Size(77, 13);
+            this.lblEsquceuSenha.TabIndex = 7;
+            this.lblEsquceuSenha.Text = "Esqueci a senha";
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.lblSenha.Location = new System.Drawing.Point(29, 124);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(48, 16);
+            this.lblSenha.TabIndex = 6;
+            this.lblSenha.Text = "Senha:";
+            // 
+            // lblemail
+            // 
+            this.lblemail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblemail.AutoSize = true;
+            this.lblemail.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.lblemail.Location = new System.Drawing.Point(28, 73);
+            this.lblemail.Name = "lblemail";
+            this.lblemail.Size = new System.Drawing.Size(51, 16);
+            this.lblemail.TabIndex = 5;
+            this.lblemail.Text = "E-mail:";
             // 
             // txtBoxSenha
             // 
@@ -71,7 +124,6 @@
             this.txtBoxUsuario.Size = new System.Drawing.Size(237, 20);
             this.txtBoxUsuario.TabIndex = 3;
             this.txtBoxUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBoxUsuario.TextChanged += new System.EventHandler(this.txtBoxUsuario_TextChanged);
             // 
             // lblLogin
             // 
@@ -90,61 +142,32 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::MusicStationForms.Properties.Resources.music_station_vetorizada_1__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(271, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(274, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(238, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // lblemail
+            // panel2
             // 
-            this.lblemail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblemail.AutoSize = true;
-            this.lblemail.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblemail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.lblemail.Location = new System.Drawing.Point(28, 73);
-            this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(51, 16);
-            this.lblemail.TabIndex = 5;
-            this.lblemail.Text = "E-mail:";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(30)))), ((int)(((byte)(98)))));
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Location = new System.Drawing.Point(-6, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(824, 25);
+            this.panel2.TabIndex = 2;
             // 
-            // lblSenha
+            // pictureBox2
             // 
-            this.lblSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.lblSenha.Location = new System.Drawing.Point(29, 124);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(48, 16);
-            this.lblSenha.TabIndex = 6;
-            this.lblSenha.Text = "Senha:";
-            // 
-            // lblEsquceuSenha
-            // 
-            this.lblEsquceuSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblEsquceuSenha.AutoSize = true;
-            this.lblEsquceuSenha.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsquceuSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblEsquceuSenha.Location = new System.Drawing.Point(28, 176);
-            this.lblEsquceuSenha.Name = "lblEsquceuSenha";
-            this.lblEsquceuSenha.Size = new System.Drawing.Size(77, 13);
-            this.lblEsquceuSenha.TabIndex = 7;
-            this.lblEsquceuSenha.Text = "Esqueci a senha";
-            // 
-            // bttnEntrar
-            // 
-            this.bttnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.bttnEntrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bttnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnEntrar.Location = new System.Drawing.Point(110, 207);
-            this.bttnEntrar.Name = "bttnEntrar";
-            this.bttnEntrar.Size = new System.Drawing.Size(84, 23);
-            this.bttnEntrar.TabIndex = 8;
-            this.bttnEntrar.Text = "ENTRAR";
-            this.bttnEntrar.UseVisualStyleBackColor = false;
+            this.pictureBox2.Image = global::MusicStationForms.Properties.Resources.close;
+            this.pictureBox2.Location = new System.Drawing.Point(768, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // FormLogin
             // 
@@ -152,13 +175,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
             this.Text = "FormLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -174,6 +201,8 @@
         private System.Windows.Forms.Label lblemail;
         private System.Windows.Forms.Label lblEsquceuSenha;
         private System.Windows.Forms.Button bttnEntrar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
