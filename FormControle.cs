@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace MusicStationForms
 {
-    public partial class FormLogin : Form
+    public partial class FormControle : Form
     {
-        public FormLogin()
+        public FormControle()
         {
             InitializeComponent();
         }
 
-        private void bttnEntrar_Click(object sender, EventArgs e)
+        private void btnRelatorios_Click(object sender, EventArgs e)
         {
 
         }
