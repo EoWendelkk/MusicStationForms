@@ -57,9 +57,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(20)))), ((int)(((byte)(71)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(815, 46);
+            this.panel2.Size = new System.Drawing.Size(799, 46);
             this.panel2.TabIndex = 3;
             // 
             // label1
@@ -67,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Swis721 Blk BT", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.label1.Location = new System.Drawing.Point(332, 2);
+            this.label1.Location = new System.Drawing.Point(333, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 42);
             this.label1.TabIndex = 0;
@@ -85,7 +86,7 @@
             this.btnServicos.TabIndex = 4;
             this.btnServicos.Text = "Serviços";
             this.btnServicos.UseVisualStyleBackColor = false;
-            this.btnServicos.Click += new System.EventHandler(this.btnControle_Click);
+            this.btnServicos.Click += new System.EventHandler(this.btnServicos_Click);
             // 
             // btnControle
             // 
@@ -99,6 +100,7 @@
             this.btnControle.TabIndex = 5;
             this.btnControle.Text = "Controle";
             this.btnControle.UseVisualStyleBackColor = false;
+            this.btnControle.Click += new System.EventHandler(this.btnControle_Click);
             // 
             // btnRelatorios
             // 
@@ -112,6 +114,7 @@
             this.btnRelatorios.TabIndex = 6;
             this.btnRelatorios.Text = "Relatórios";
             this.btnRelatorios.UseVisualStyleBackColor = false;
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // btnDashboard
             // 
@@ -125,6 +128,7 @@
             this.btnDashboard.TabIndex = 7;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnPerfil
             // 
@@ -144,7 +148,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(24)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(799, 451);
             this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.btnRelatorios);

@@ -19,7 +19,9 @@ namespace MusicStationForms
 
         private void bttnEntrar_Click(object sender, EventArgs e)
         {
-
+            FormMenu menu = new FormMenu();
+            menu.Show();
+            this.Hide();
         }
     }
 }
