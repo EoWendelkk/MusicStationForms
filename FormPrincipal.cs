@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MusicStationForms
 {
-    public partial class FormPrincipal : Form
+    public partial class FormPrincipal : System.Windows.Forms.Form
     {
         public FormPrincipal()
         {

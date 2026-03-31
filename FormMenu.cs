@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MusicStationForms
 {
-    public partial class FormMenu : Form
+    public partial class FormMenu : System.Windows.Forms.Form
     {
         public FormMenu()
         {
@@ -28,29 +28,29 @@ namespace MusicStationForms
 
         private void btnControle_Click(object sender, EventArgs e)
         {
-            FormPrincipal principal = new FormPrincipal(FormPrincipal.AreaInicial.controle);
-            principal.Show();
+            FormControle controle = new FormControle();
+            controle.Show();
             this.Close();
         }
 
         private void btnServicos_Click(object sender, EventArgs e)
         {
-            FormPrincipal principal = new FormPrincipal(FormPrincipal.AreaInicial.servicos);
-            principal.Show();
+            FormControle controle = new FormControle();
+            controle.Show();
             this.Close();
         }
 
         private void btnRelatorios_Click(object sender, EventArgs e)
         {
-            FormPrincipal principal = new FormPrincipal(FormPrincipal.AreaInicial.relatorios);
-            principal.Show();
+            FormControle controle = new FormControle();
+            controle.Show();
             this.Close();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            Form principal = new FormPrincipal(FormPrincipal.AreaInicial.nenhum);
-            principal.Show();
+            FormControle controle = new FormControle();
+            controle.Show();
             this.Close();
         }
     }

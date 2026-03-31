@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MusicStationForms
 {
-    public partial class FormLogin : Form
+    public partial class FormLogin : System.Windows.Forms.Form
     {
         public FormLogin()
         {
