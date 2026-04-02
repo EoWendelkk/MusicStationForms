@@ -41,11 +41,11 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.textEndereco = new System.Windows.Forms.TextBox();
-            this.lblEndereco = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
             this.txtTelefone = new System.Windows.Forms.TextBox();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.txtID_usuario = new System.Windows.Forms.TextBox();
-            this.lblID_usuario = new System.Windows.Forms.Label();
+            this.lblObservacoes = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pnlUsuarios.SuspendLayout();
             this.pnlPesquisa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -167,15 +167,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.pnl.Controls.Add(this.comboBox1);
             this.pnl.Controls.Add(this.btnLancar);
             this.pnl.Controls.Add(this.btnExcluir);
             this.pnl.Controls.Add(this.btnAtualizar);
             this.pnl.Controls.Add(this.textEndereco);
-            this.pnl.Controls.Add(this.lblEndereco);
+            this.pnl.Controls.Add(this.lblData);
             this.pnl.Controls.Add(this.txtTelefone);
-            this.pnl.Controls.Add(this.lblTelefone);
-            this.pnl.Controls.Add(this.txtID_usuario);
-            this.pnl.Controls.Add(this.lblID_usuario);
+            this.pnl.Controls.Add(this.lblObservacoes);
+            this.pnl.Controls.Add(this.lblStatus);
             this.pnl.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.pnl.Location = new System.Drawing.Point(0, 52);
             this.pnl.Name = "pnl";
@@ -238,20 +238,20 @@
             this.textEndereco.Size = new System.Drawing.Size(197, 20);
             this.textEndereco.TabIndex = 5;
             // 
-            // lblEndereco
+            // lblData
             // 
-            this.lblEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEndereco.AutoSize = true;
-            this.lblEndereco.BackColor = System.Drawing.Color.Transparent;
-            this.lblEndereco.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndereco.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblEndereco.Location = new System.Drawing.Point(4, 94);
-            this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(90, 19);
-            this.lblEndereco.TabIndex = 4;
-            this.lblEndereco.Text = "Endereço:";
+            this.lblData.AutoSize = true;
+            this.lblData.BackColor = System.Drawing.Color.Transparent;
+            this.lblData.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblData.Location = new System.Drawing.Point(4, 94);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(142, 19);
+            this.lblData.TabIndex = 4;
+            this.lblData.Text = "Data de Entrega:";
             // 
             // txtTelefone
             // 
@@ -264,45 +264,42 @@
             this.txtTelefone.Size = new System.Drawing.Size(197, 20);
             this.txtTelefone.TabIndex = 3;
             // 
-            // lblTelefone
+            // lblObservacoes
             // 
-            this.lblTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblObservacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelefone.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTelefone.Location = new System.Drawing.Point(4, 49);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(82, 19);
-            this.lblTelefone.TabIndex = 2;
-            this.lblTelefone.Text = "Telefone:";
+            this.lblObservacoes.AutoSize = true;
+            this.lblObservacoes.BackColor = System.Drawing.Color.Transparent;
+            this.lblObservacoes.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObservacoes.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblObservacoes.Location = new System.Drawing.Point(4, 49);
+            this.lblObservacoes.Name = "lblObservacoes";
+            this.lblObservacoes.Size = new System.Drawing.Size(114, 19);
+            this.lblObservacoes.TabIndex = 2;
+            this.lblObservacoes.Text = "Observações:";
             // 
-            // txtID_usuario
+            // lblStatus
             // 
-            this.txtID_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtID_usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtID_usuario.Location = new System.Drawing.Point(3, 26);
-            this.txtID_usuario.Name = "txtID_usuario";
-            this.txtID_usuario.Size = new System.Drawing.Size(197, 20);
-            this.txtID_usuario.TabIndex = 1;
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblStatus.Location = new System.Drawing.Point(4, 4);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(63, 19);
+            this.lblStatus.TabIndex = 0;
+            this.lblStatus.Text = "Status:";
             // 
-            // lblID_usuario
+            // comboBox1
             // 
-            this.lblID_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblID_usuario.AutoSize = true;
-            this.lblID_usuario.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID_usuario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblID_usuario.Location = new System.Drawing.Point(4, 4);
-            this.lblID_usuario.Name = "lblID_usuario";
-            this.lblID_usuario.Size = new System.Drawing.Size(101, 19);
-            this.lblID_usuario.TabIndex = 0;
-            this.lblID_usuario.Text = "ID_usuario:";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 26);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(197, 21);
+            this.comboBox1.TabIndex = 9;
             // 
             // FormPedidos
             // 
@@ -342,10 +339,10 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.TextBox textEndereco;
-        private System.Windows.Forms.Label lblEndereco;
+        private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.TextBox txtTelefone;
-        private System.Windows.Forms.Label lblTelefone;
-        private System.Windows.Forms.TextBox txtID_usuario;
-        private System.Windows.Forms.Label lblID_usuario;
+        private System.Windows.Forms.Label lblObservacoes;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

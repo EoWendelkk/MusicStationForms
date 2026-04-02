@@ -42,9 +42,7 @@ namespace MusicStationForms
         // ================== BOTÕES CLICKS ================== \\
         private void btnCursos_Click(object sender, EventArgs e)
         {
-            FormCursos cursos = new FormCursos();
-            cursos.Show();
-            this.Close();
+            openChildForm(new FormCursos());
         }
 
         private void picboxLogo_Click(object sender, EventArgs e)
@@ -52,6 +50,16 @@ namespace MusicStationForms
             FormMenu menu = new FormMenu();
             menu.Show(this);
             this.Close();
+        }
+
+        private void btnShows_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormShows());
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            openChildForm((new FormProdutos());
         }
     }
 }

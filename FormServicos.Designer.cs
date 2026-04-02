@@ -34,7 +34,7 @@
             this.picboxLogo = new System.Windows.Forms.PictureBox();
             this.pnlSubTitles = new System.Windows.Forms.Panel();
             this.btnCursos = new System.Windows.Forms.Button();
-            this.btnPedidos = new System.Windows.Forms.Button();
+            this.btnProfissionais = new System.Windows.Forms.Button();
             this.btnShows = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.pnlChildForm = new System.Windows.Forms.Panel();
@@ -92,7 +92,7 @@
             // 
             this.pnlSubTitles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(24)))));
             this.pnlSubTitles.Controls.Add(this.btnCursos);
-            this.pnlSubTitles.Controls.Add(this.btnPedidos);
+            this.pnlSubTitles.Controls.Add(this.btnProfissionais);
             this.pnlSubTitles.Controls.Add(this.btnShows);
             this.pnlSubTitles.Controls.Add(this.btnProdutos);
             this.pnlSubTitles.Dock = System.Windows.Forms.DockStyle.Top;
@@ -115,18 +115,18 @@
             this.btnCursos.UseVisualStyleBackColor = false;
             this.btnCursos.Click += new System.EventHandler(this.btnCursos_Click);
             // 
-            // btnPedidos
+            // btnProfissionais
             // 
-            this.btnPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(20)))), ((int)(((byte)(71)))));
-            this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedidos.Font = new System.Drawing.Font("News706 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.btnPedidos.Location = new System.Drawing.Point(614, 12);
-            this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Size = new System.Drawing.Size(174, 46);
-            this.btnPedidos.TabIndex = 11;
-            this.btnPedidos.Text = "Pedidos";
-            this.btnPedidos.UseVisualStyleBackColor = false;
+            this.btnProfissionais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(20)))), ((int)(((byte)(71)))));
+            this.btnProfissionais.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfissionais.Font = new System.Drawing.Font("News706 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfissionais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.btnProfissionais.Location = new System.Drawing.Point(614, 12);
+            this.btnProfissionais.Name = "btnProfissionais";
+            this.btnProfissionais.Size = new System.Drawing.Size(174, 46);
+            this.btnProfissionais.TabIndex = 11;
+            this.btnProfissionais.Text = "Profissionais";
+            this.btnProfissionais.UseVisualStyleBackColor = false;
             // 
             // btnShows
             // 
@@ -140,6 +140,7 @@
             this.btnShows.TabIndex = 6;
             this.btnShows.Text = "Shows";
             this.btnShows.UseVisualStyleBackColor = false;
+            this.btnShows.Click += new System.EventHandler(this.btnShows_Click);
             // 
             // btnProdutos
             // 
@@ -153,6 +154,7 @@
             this.btnProdutos.TabIndex = 8;
             this.btnProdutos.Text = "Produtos";
             this.btnProdutos.UseVisualStyleBackColor = false;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // pnlChildForm
             // 
@@ -190,7 +192,7 @@
         private System.Windows.Forms.PictureBox picboxLogo;
         private System.Windows.Forms.Panel pnlSubTitles;
         private System.Windows.Forms.Button btnCursos;
-        private System.Windows.Forms.Button btnPedidos;
+        private System.Windows.Forms.Button btnProfissionais;
         private System.Windows.Forms.Button btnShows;
         private System.Windows.Forms.Button btnProdutos;
         private System.Windows.Forms.Panel pnlChildForm;

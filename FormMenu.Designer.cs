@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlPerfil = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnControle = new System.Windows.Forms.Button();
             this.btnRelatorios = new System.Windows.Forms.Button();
@@ -36,20 +37,32 @@
             this.btnPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnServicos = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            this.pnlPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.pnlPerfil);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(799, 46);
             this.panel2.TabIndex = 3;
+            // 
+            // pnlPerfil
+            // 
+            this.pnlPerfil.Controls.Add(this.pictureBox2);
+            this.pnlPerfil.Location = new System.Drawing.Point(681, 2);
+            this.pnlPerfil.Name = "pnlPerfil";
+            this.pnlPerfil.Size = new System.Drawing.Size(69, 44);
+            this.pnlPerfil.TabIndex = 1;
             // 
             // label1
             // 
@@ -141,6 +154,14 @@
             this.btnServicos.UseVisualStyleBackColor = false;
             this.btnServicos.Click += new System.EventHandler(this.btnServicos_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(0, -2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(66, 46);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,7 +180,9 @@
             this.Text = "FormMenu";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.pnlPerfil.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -173,5 +196,7 @@
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button btnServicos;
+        private System.Windows.Forms.Panel pnlPerfil;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

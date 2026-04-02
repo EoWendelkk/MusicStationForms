@@ -249,9 +249,9 @@
             this.lblEndereço.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblEndereço.Location = new System.Drawing.Point(4, 94);
             this.lblEndereço.Name = "lblEndereço";
-            this.lblEndereço.Size = new System.Drawing.Size(85, 19);
+            this.lblEndereço.Size = new System.Drawing.Size(90, 19);
             this.lblEndereço.TabIndex = 4;
-            this.lblEndereço.Text = "Endereço";
+            this.lblEndereço.Text = "Endereço:";
             // 
             // txtTelefone
             // 

@@ -30,10 +30,12 @@ namespace MusicStationForms
             lvPedidos.GridLines = true;
             lvPedidos.MultiSelect = false;
             lvPedidos.Columns.Add("ID", 80);
-            lvPedidos.Columns.Add("ID_usuario", 150);
-            lvPedidos.Columns.Add("Telefone", 200);
-            lvPedidos.Columns.Add("Endereço", 100);
-            lvPedidos.Columns.Add("Data de Criação", 150);
+            lvPedidos.Columns.Add("ID_Cliente", 150);
+            lvPedidos.Columns.Add("ID_Profissional", 200);
+            lvPedidos.Columns.Add("Status", 100);
+            lvPedidos.Columns.Add("Observações", 250);
+            lvPedidos.Columns.Add("Data de Entrega", 15);
+            lvPedidos.Columns.Add("Valor", 15);
         }
 
         // ================== FILTRO ================== \\

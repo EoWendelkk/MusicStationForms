@@ -17,6 +17,7 @@ namespace MusicStationForms
         public FormCursos()
         {
             InitializeComponent();
+            ConfigurarListView();
         }
 
         // ================== LISTVIEW ================== \\

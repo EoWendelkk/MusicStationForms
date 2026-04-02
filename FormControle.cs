@@ -57,7 +57,10 @@ namespace MusicStationForms
         {
             openChildForm(new FormFuncionarios());
         }
-
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormPedidos());
+        }
         private void picboxLogo_Click(object sender, EventArgs e)
         {
             FormMenu menu = new FormMenu();
@@ -65,9 +68,6 @@ namespace MusicStationForms
             this.Close();
         }
 
-        private void btnPedidos_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormPedidos());
-        }
+
     }
 }
