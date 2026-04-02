@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace MusicStationForms
 {
-    public partial class FormControle : Form
+    public partial class FormServicos : Form
     {
         private Form activeForm = null;
 
-        public FormControle()
+        public FormServicos()
         {
             InitializeComponent();
         }
@@ -39,35 +39,19 @@ namespace MusicStationForms
             childForm.Show();
         }
 
-        //Botões clicks\\
-
-        // Evento do botão Usuários
-        private void btnUsuários_Click(object sender, EventArgs e)
+        // ================== BOTÕES CLICKS ================== \\
+        private void btnCursos_Click(object sender, EventArgs e)
         {
-            // Abre o formulário de usuários dentro do painel
-            openChildForm(new FormUsuarios());
-        }
-
-        private void btnClientes_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormClientes());
-        }
-
-        private void btnFuncionarios_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormFuncionarios());
+            FormCursos cursos = new FormCursos();
+            cursos.Show();
+            this.Close();
         }
 
         private void picboxLogo_Click(object sender, EventArgs e)
         {
             FormMenu menu = new FormMenu();
-            menu.Show();
+            menu.Show(this);
             this.Close();
-        }
-
-        private void btnPedidos_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormPedidos());
         }
     }
 }

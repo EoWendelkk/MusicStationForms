@@ -30,12 +30,12 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnServicos = new System.Windows.Forms.Button();
             this.btnControle = new System.Windows.Forms.Button();
             this.btnRelatorios = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnServicos = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,20 +61,6 @@
             this.label1.Size = new System.Drawing.Size(132, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "MENU";
-            // 
-            // btnServicos
-            // 
-            this.btnServicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(20)))), ((int)(((byte)(71)))));
-            this.btnServicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnServicos.Font = new System.Drawing.Font("News706 BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnServicos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.btnServicos.Location = new System.Drawing.Point(485, 169);
-            this.btnServicos.Name = "btnServicos";
-            this.btnServicos.Size = new System.Drawing.Size(203, 61);
-            this.btnServicos.TabIndex = 4;
-            this.btnServicos.Text = "Serviços";
-            this.btnServicos.UseVisualStyleBackColor = false;
-            this.btnServicos.Click += new System.EventHandler(this.btnServicos_Click);
             // 
             // btnControle
             // 
@@ -102,7 +88,6 @@
             this.btnRelatorios.TabIndex = 6;
             this.btnRelatorios.Text = "Relatórios";
             this.btnRelatorios.UseVisualStyleBackColor = false;
-            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // btnDashboard
             // 
@@ -116,7 +101,6 @@
             this.btnDashboard.TabIndex = 7;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnPerfil
             // 
@@ -143,23 +127,36 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // btnServicos
+            // 
+            this.btnServicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(20)))), ((int)(((byte)(71)))));
+            this.btnServicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServicos.Font = new System.Drawing.Font("News706 BT", 20.25F, System.Drawing.FontStyle.Bold);
+            this.btnServicos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.btnServicos.Location = new System.Drawing.Point(485, 169);
+            this.btnServicos.Name = "btnServicos";
+            this.btnServicos.Size = new System.Drawing.Size(203, 61);
+            this.btnServicos.TabIndex = 9;
+            this.btnServicos.Text = "Serviços";
+            this.btnServicos.UseVisualStyleBackColor = false;
+            this.btnServicos.Click += new System.EventHandler(this.btnServicos_Click);
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(799, 451);
+            this.Controls.Add(this.btnServicos);
             this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.btnRelatorios);
             this.Controls.Add(this.btnControle);
-            this.Controls.Add(this.btnServicos);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMenu";
             this.Text = "FormMenu";
-            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -171,10 +168,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnServicos;
         private System.Windows.Forms.Button btnControle;
         private System.Windows.Forms.Button btnRelatorios;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnPerfil;
+        private System.Windows.Forms.Button btnServicos;
     }
 }

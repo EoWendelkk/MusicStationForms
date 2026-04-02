@@ -1,6 +1,6 @@
 ﻿namespace MusicStationForms
 {
-    partial class FormUsuarios
+    partial class FormCursos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlUsuarios = new System.Windows.Forms.Panel();
+            this.pnlClientes = new System.Windows.Forms.Panel();
             this.pnlPesquisa = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
-            this.lblUsuarios = new System.Windows.Forms.Label();
-            this.lvUsuarios = new System.Windows.Forms.ListView();
+            this.lblCursos = new System.Windows.Forms.Label();
+            this.lvCursos = new System.Windows.Forms.ListView();
             this.pnlDados = new System.Windows.Forms.Panel();
             this.lblDados = new System.Windows.Forms.Label();
-            this.pnl = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnLancar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
-            this.textSenha = new System.Windows.Forms.TextBox();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
+            this.textPreco = new System.Windows.Forms.TextBox();
+            this.lblPreco = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.pnlUsuarios.SuspendLayout();
+            this.txtidprofissional = new System.Windows.Forms.TextBox();
+            this.lblID_profissional = new System.Windows.Forms.Label();
+            this.pnlClientes.SuspendLayout();
             this.pnlPesquisa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDados.SuspendLayout();
-            this.pnl.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlUsuarios
+            // pnlClientes
             // 
-            this.pnlUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnlClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(30)))), ((int)(((byte)(98)))));
-            this.pnlUsuarios.Controls.Add(this.pnlPesquisa);
-            this.pnlUsuarios.Controls.Add(this.txtPesquisa);
-            this.pnlUsuarios.Controls.Add(this.lblUsuarios);
-            this.pnlUsuarios.Controls.Add(this.lvUsuarios);
-            this.pnlUsuarios.Location = new System.Drawing.Point(245, 12);
-            this.pnlUsuarios.Name = "pnlUsuarios";
-            this.pnlUsuarios.Size = new System.Drawing.Size(527, 270);
-            this.pnlUsuarios.TabIndex = 1;
+            this.pnlClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(30)))), ((int)(((byte)(98)))));
+            this.pnlClientes.Controls.Add(this.pnlPesquisa);
+            this.pnlClientes.Controls.Add(this.txtPesquisa);
+            this.pnlClientes.Controls.Add(this.lblCursos);
+            this.pnlClientes.Controls.Add(this.lvCursos);
+            this.pnlClientes.Location = new System.Drawing.Point(245, 12);
+            this.pnlClientes.Name = "pnlClientes";
+            this.pnlClientes.Size = new System.Drawing.Size(527, 270);
+            this.pnlClientes.TabIndex = 7;
             // 
             // pnlPesquisa
             // 
@@ -101,36 +101,36 @@
             this.txtPesquisa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPesquisa_KeyDown);
             this.txtPesquisa.Leave += new System.EventHandler(this.txtPesquisa_Leave);
             // 
-            // lblUsuarios
+            // lblCursos
             // 
-            this.lblUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblCursos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUsuarios.AutoSize = true;
-            this.lblUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuarios.Font = new System.Drawing.Font("News706 BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.lblUsuarios.Location = new System.Drawing.Point(210, 11);
-            this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(133, 32);
-            this.lblUsuarios.TabIndex = 2;
-            this.lblUsuarios.Text = "Usuários";
+            this.lblCursos.AutoSize = true;
+            this.lblCursos.BackColor = System.Drawing.Color.Transparent;
+            this.lblCursos.Font = new System.Drawing.Font("News706 BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.lblCursos.Location = new System.Drawing.Point(188, 11);
+            this.lblCursos.Name = "lblCursos";
+            this.lblCursos.Size = new System.Drawing.Size(107, 32);
+            this.lblCursos.TabIndex = 2;
+            this.lblCursos.Text = "Cursos";
             // 
-            // lvUsuarios
+            // lvCursos
             // 
-            this.lvUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lvCursos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvUsuarios.FullRowSelect = true;
-            this.lvUsuarios.GridLines = true;
-            this.lvUsuarios.HideSelection = false;
-            this.lvUsuarios.Location = new System.Drawing.Point(32, 78);
-            this.lvUsuarios.MultiSelect = false;
-            this.lvUsuarios.Name = "lvUsuarios";
-            this.lvUsuarios.Size = new System.Drawing.Size(481, 178);
-            this.lvUsuarios.TabIndex = 0;
-            this.lvUsuarios.UseCompatibleStateImageBehavior = false;
-            this.lvUsuarios.View = System.Windows.Forms.View.Details;
+            this.lvCursos.FullRowSelect = true;
+            this.lvCursos.GridLines = true;
+            this.lvCursos.HideSelection = false;
+            this.lvCursos.Location = new System.Drawing.Point(32, 78);
+            this.lvCursos.MultiSelect = false;
+            this.lvCursos.Name = "lvCursos";
+            this.lvCursos.Size = new System.Drawing.Size(481, 178);
+            this.lvCursos.TabIndex = 0;
+            this.lvCursos.UseCompatibleStateImageBehavior = false;
+            this.lvCursos.View = System.Windows.Forms.View.Details;
             // 
             // pnlDados
             // 
@@ -139,12 +139,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlDados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(30)))), ((int)(((byte)(98)))));
             this.pnlDados.Controls.Add(this.lblDados);
-            this.pnlDados.Controls.Add(this.pnl);
+            this.pnlDados.Controls.Add(this.panel1);
             this.pnlDados.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.pnlDados.Location = new System.Drawing.Point(12, 12);
             this.pnlDados.Name = "pnlDados";
             this.pnlDados.Size = new System.Drawing.Size(203, 270);
-            this.pnlDados.TabIndex = 0;
+            this.pnlDados.TabIndex = 6;
             // 
             // lblDados
             // 
@@ -161,26 +161,26 @@
             this.lblDados.TabIndex = 0;
             this.lblDados.Text = "Dados";
             // 
-            // pnl
+            // panel1
             // 
-            this.pnl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.pnl.Controls.Add(this.btnLancar);
-            this.pnl.Controls.Add(this.btnExcluir);
-            this.pnl.Controls.Add(this.btnAtualizar);
-            this.pnl.Controls.Add(this.textSenha);
-            this.pnl.Controls.Add(this.lblSenha);
-            this.pnl.Controls.Add(this.txtEmail);
-            this.pnl.Controls.Add(this.lblEmail);
-            this.pnl.Controls.Add(this.txtNome);
-            this.pnl.Controls.Add(this.lblNome);
-            this.pnl.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.pnl.Location = new System.Drawing.Point(0, 52);
-            this.pnl.Name = "pnl";
-            this.pnl.Size = new System.Drawing.Size(203, 218);
-            this.pnl.TabIndex = 1;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.panel1.Controls.Add(this.btnLancar);
+            this.panel1.Controls.Add(this.btnExcluir);
+            this.panel1.Controls.Add(this.btnAtualizar);
+            this.panel1.Controls.Add(this.textPreco);
+            this.panel1.Controls.Add(this.lblPreco);
+            this.panel1.Controls.Add(this.txtNome);
+            this.panel1.Controls.Add(this.lblNome);
+            this.panel1.Controls.Add(this.txtidprofissional);
+            this.panel1.Controls.Add(this.lblID_profissional);
+            this.panel1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(0, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(203, 218);
+            this.panel1.TabIndex = 1;
             // 
             // btnLancar
             // 
@@ -227,57 +227,31 @@
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
             // 
-            // textSenha
+            // textPreco
             // 
-            this.textSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textPreco.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textSenha.Location = new System.Drawing.Point(3, 116);
-            this.textSenha.Name = "textSenha";
-            this.textSenha.Size = new System.Drawing.Size(197, 20);
-            this.textSenha.TabIndex = 5;
+            this.textPreco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textPreco.Location = new System.Drawing.Point(3, 116);
+            this.textPreco.Name = "textPreco";
+            this.textPreco.Size = new System.Drawing.Size(197, 20);
+            this.textPreco.TabIndex = 5;
             // 
-            // lblSenha
+            // lblPreco
             // 
-            this.lblSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblPreco.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
-            this.lblSenha.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSenha.Location = new System.Drawing.Point(4, 94);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(62, 19);
-            this.lblSenha.TabIndex = 4;
-            this.lblSenha.Text = "Senha:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Location = new System.Drawing.Point(3, 71);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(197, 20);
-            this.txtEmail.TabIndex = 3;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmail.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblEmail.Location = new System.Drawing.Point(4, 49);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(61, 19);
-            this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Email:";
+            this.lblPreco.AutoSize = true;
+            this.lblPreco.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreco.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreco.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblPreco.Location = new System.Drawing.Point(4, 94);
+            this.lblPreco.Name = "lblPreco";
+            this.lblPreco.Size = new System.Drawing.Size(60, 19);
+            this.lblPreco.TabIndex = 4;
+            this.lblPreco.Text = "Preço:";
             // 
             // txtNome
             // 
@@ -285,10 +259,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNome.Location = new System.Drawing.Point(3, 26);
+            this.txtNome.Location = new System.Drawing.Point(3, 71);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(197, 20);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 3;
             // 
             // lblNome
             // 
@@ -296,55 +270,82 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNome.Location = new System.Drawing.Point(4, 4);
+            this.lblNome.Location = new System.Drawing.Point(4, 49);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(60, 19);
-            this.lblNome.TabIndex = 0;
+            this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // FormUsuarios
+            // txtidprofissional
+            // 
+            this.txtidprofissional.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtidprofissional.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtidprofissional.Location = new System.Drawing.Point(3, 26);
+            this.txtidprofissional.Name = "txtidprofissional";
+            this.txtidprofissional.Size = new System.Drawing.Size(197, 20);
+            this.txtidprofissional.TabIndex = 1;
+            // 
+            // lblID_profissional
+            // 
+            this.lblID_profissional.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblID_profissional.AutoSize = true;
+            this.lblID_profissional.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID_profissional.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblID_profissional.Location = new System.Drawing.Point(4, 4);
+            this.lblID_profissional.Name = "lblID_profissional";
+            this.lblID_profissional.Size = new System.Drawing.Size(134, 19);
+            this.lblID_profissional.TabIndex = 0;
+            this.lblID_profissional.Text = "ID_profissional:";
+            // 
+            // FormCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(784, 294);
-            this.Controls.Add(this.pnlUsuarios);
+            this.Controls.Add(this.pnlClientes);
             this.Controls.Add(this.pnlDados);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormUsuarios";
-            this.Text = "FormRelatórios";
-            this.pnlUsuarios.ResumeLayout(false);
-            this.pnlUsuarios.PerformLayout();
+            this.Name = "FormCursos";
+            this.Text = "FormCursos";
+            this.pnlClientes.ResumeLayout(false);
+            this.pnlClientes.PerformLayout();
             this.pnlPesquisa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
-            this.pnl.ResumeLayout(false);
-            this.pnl.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel pnlUsuarios;
-        private System.Windows.Forms.Panel pnlDados;
-        private System.Windows.Forms.Panel pnl;
-        private System.Windows.Forms.Label lblDados;
-        private System.Windows.Forms.TextBox textSenha;
-        private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.ListView lvUsuarios;
-        private System.Windows.Forms.Label lblUsuarios;
+
+        private System.Windows.Forms.Panel pnlClientes;
+        private System.Windows.Forms.Panel pnlPesquisa;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtPesquisa;
+        private System.Windows.Forms.Label lblCursos;
+        private System.Windows.Forms.ListView lvCursos;
+        private System.Windows.Forms.Panel pnlDados;
+        private System.Windows.Forms.Label lblDados;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLancar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAtualizar;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel pnlPesquisa;
+        private System.Windows.Forms.TextBox textPreco;
+        private System.Windows.Forms.Label lblPreco;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.TextBox txtidprofissional;
+        private System.Windows.Forms.Label lblID_profissional;
     }
 }

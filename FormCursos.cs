@@ -1,65 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MusicStationForms
 {
-    public partial class FormUsuarios : Form
+    public partial class FormCursos : Form
     {
-        // Guarda todos os itens para poder filtrar corretamente
+        /// Guarda todos os itens para poder filtrar corretamente
         private List<ListViewItem> itensOriginais = new List<ListViewItem>();
-
-        public FormUsuarios()
+        public FormCursos()
         {
             InitializeComponent();
-            ConfigurarListView();
         }
-
-        /* ================== BORDAS DOS PAINÉIS ================== 
-
-        private void pnlUsuarios_Paint(object sender, PaintEventArgs e)
-        {
-            using (Pen pen = new Pen(Color.FromArgb(238, 182, 34), 3))
-            {
-                e.Graphics.DrawRectangle(
-                    pen,
-                    1,
-                    1,
-                    pnlUsuarios.Width - 2,
-                    pnlUsuarios.Height - 2
-                );
-            }
-        }
-
-        private void pnlDados_Paint(object sender, PaintEventArgs e)
-        {
-            using (Pen pen = new Pen(Color.FromArgb(238, 182, 34), 3))
-            {
-                e.Graphics.DrawRectangle(
-                    pen,
-                    1,
-                    1,
-                    pnlDados.Width - 2,
-                    pnlDados.Height - 2
-                );
-            }
-        }*/
 
         // ================== LISTVIEW ================== \\
 
         private void ConfigurarListView()
         {
-            lvUsuarios.Columns.Clear();
-            lvUsuarios.View = View.Details;
-            lvUsuarios.FullRowSelect = true;
-            lvUsuarios.GridLines = true;
-            lvUsuarios.MultiSelect = false;
-            lvUsuarios.Columns.Add("ID", 80);
-            lvUsuarios.Columns.Add("Nome", 150);
-            lvUsuarios.Columns.Add("Email", 200);
-            lvUsuarios.Columns.Add("Senha", 100);
-            lvUsuarios.Columns.Add("Data de Criação", 150);
+            lvCursos.Columns.Clear();
+            lvCursos.View = View.Details;
+            lvCursos.FullRowSelect = true;
+            lvCursos.GridLines = true;
+            lvCursos.MultiSelect = false;
+            lvCursos.Columns.Add("ID", 80);
+            lvCursos.Columns.Add("ID_PROFISSIONAL", 150);
+            lvCursos.Columns.Add("NOME", 200);
+            lvCursos.Columns.Add("PREÇO", 100);
+            lvCursos.Columns.Add("DATA DE CRIAÇÃO", 150);
         }
 
         // ================== FILTRO ================== \\
@@ -74,16 +47,16 @@ namespace MusicStationForms
 
         private void FiltrarListView(string texto)
         {
-            lvUsuarios.BeginUpdate();
-            lvUsuarios.Items.Clear();
+            lvCursos.BeginUpdate();
+            lvCursos.Items.Clear();
 
             // Se o texto estiver vazio, mostra tudo novamente
             if (string.IsNullOrWhiteSpace(texto))
             {
                 foreach (var item in itensOriginais)
-                    lvUsuarios.Items.Add((ListViewItem)item.Clone());
+                    lvCursos.Items.Add((ListViewItem)item.Clone());
 
-                lvUsuarios.EndUpdate();
+                lvCursos.EndUpdate();
                 return;
             }
 
@@ -102,10 +75,10 @@ namespace MusicStationForms
                 }
 
                 if (encontrado)
-                    lvUsuarios.Items.Add((ListViewItem)item.Clone());
+                    lvCursos.Items.Add((ListViewItem)item.Clone());
             }
 
-            lvUsuarios.EndUpdate();
+            lvCursos.EndUpdate();
         }
 
         // ================== PLACEHOLDER DO TEXTBOX DE PESQUISA ================== \\

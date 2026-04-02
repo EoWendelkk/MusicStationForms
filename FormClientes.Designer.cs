@@ -1,6 +1,6 @@
 ﻿namespace MusicStationForms
 {
-    partial class FormUsuarios
+    partial class FormClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlUsuarios = new System.Windows.Forms.Panel();
+            this.pnlClientes = new System.Windows.Forms.Panel();
             this.pnlPesquisa = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
-            this.lblUsuarios = new System.Windows.Forms.Label();
-            this.lvUsuarios = new System.Windows.Forms.ListView();
+            this.lblClientes = new System.Windows.Forms.Label();
+            this.lvClientes = new System.Windows.Forms.ListView();
             this.pnlDados = new System.Windows.Forms.Panel();
             this.lblDados = new System.Windows.Forms.Label();
-            this.pnl = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnLancar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
-            this.textSenha = new System.Windows.Forms.TextBox();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.pnlUsuarios.SuspendLayout();
+            this.textEndereco = new System.Windows.Forms.TextBox();
+            this.lblEndereço = new System.Windows.Forms.Label();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.txtIDusuario = new System.Windows.Forms.TextBox();
+            this.lblID_usuario = new System.Windows.Forms.Label();
+            this.pnlClientes.SuspendLayout();
             this.pnlPesquisa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDados.SuspendLayout();
-            this.pnl.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlUsuarios
+            // pnlClientes
             // 
-            this.pnlUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnlClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(30)))), ((int)(((byte)(98)))));
-            this.pnlUsuarios.Controls.Add(this.pnlPesquisa);
-            this.pnlUsuarios.Controls.Add(this.txtPesquisa);
-            this.pnlUsuarios.Controls.Add(this.lblUsuarios);
-            this.pnlUsuarios.Controls.Add(this.lvUsuarios);
-            this.pnlUsuarios.Location = new System.Drawing.Point(245, 12);
-            this.pnlUsuarios.Name = "pnlUsuarios";
-            this.pnlUsuarios.Size = new System.Drawing.Size(527, 270);
-            this.pnlUsuarios.TabIndex = 1;
+            this.pnlClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(30)))), ((int)(((byte)(98)))));
+            this.pnlClientes.Controls.Add(this.pnlPesquisa);
+            this.pnlClientes.Controls.Add(this.txtPesquisa);
+            this.pnlClientes.Controls.Add(this.lblClientes);
+            this.pnlClientes.Controls.Add(this.lvClientes);
+            this.pnlClientes.Location = new System.Drawing.Point(245, 12);
+            this.pnlClientes.Name = "pnlClientes";
+            this.pnlClientes.Size = new System.Drawing.Size(527, 270);
+            this.pnlClientes.TabIndex = 3;
             // 
             // pnlPesquisa
             // 
@@ -101,36 +101,36 @@
             this.txtPesquisa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPesquisa_KeyDown);
             this.txtPesquisa.Leave += new System.EventHandler(this.txtPesquisa_Leave);
             // 
-            // lblUsuarios
+            // lblClientes
             // 
-            this.lblUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUsuarios.AutoSize = true;
-            this.lblUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuarios.Font = new System.Drawing.Font("News706 BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.lblUsuarios.Location = new System.Drawing.Point(210, 11);
-            this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(133, 32);
-            this.lblUsuarios.TabIndex = 2;
-            this.lblUsuarios.Text = "Usuários";
+            this.lblClientes.AutoSize = true;
+            this.lblClientes.BackColor = System.Drawing.Color.Transparent;
+            this.lblClientes.Font = new System.Drawing.Font("News706 BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.lblClientes.Location = new System.Drawing.Point(210, 11);
+            this.lblClientes.Name = "lblClientes";
+            this.lblClientes.Size = new System.Drawing.Size(123, 32);
+            this.lblClientes.TabIndex = 2;
+            this.lblClientes.Text = "Clientes";
             // 
-            // lvUsuarios
+            // lvClientes
             // 
-            this.lvUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lvClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvUsuarios.FullRowSelect = true;
-            this.lvUsuarios.GridLines = true;
-            this.lvUsuarios.HideSelection = false;
-            this.lvUsuarios.Location = new System.Drawing.Point(32, 78);
-            this.lvUsuarios.MultiSelect = false;
-            this.lvUsuarios.Name = "lvUsuarios";
-            this.lvUsuarios.Size = new System.Drawing.Size(481, 178);
-            this.lvUsuarios.TabIndex = 0;
-            this.lvUsuarios.UseCompatibleStateImageBehavior = false;
-            this.lvUsuarios.View = System.Windows.Forms.View.Details;
+            this.lvClientes.FullRowSelect = true;
+            this.lvClientes.GridLines = true;
+            this.lvClientes.HideSelection = false;
+            this.lvClientes.Location = new System.Drawing.Point(32, 78);
+            this.lvClientes.MultiSelect = false;
+            this.lvClientes.Name = "lvClientes";
+            this.lvClientes.Size = new System.Drawing.Size(481, 178);
+            this.lvClientes.TabIndex = 0;
+            this.lvClientes.UseCompatibleStateImageBehavior = false;
+            this.lvClientes.View = System.Windows.Forms.View.Details;
             // 
             // pnlDados
             // 
@@ -139,12 +139,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlDados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(30)))), ((int)(((byte)(98)))));
             this.pnlDados.Controls.Add(this.lblDados);
-            this.pnlDados.Controls.Add(this.pnl);
+            this.pnlDados.Controls.Add(this.panel1);
             this.pnlDados.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.pnlDados.Location = new System.Drawing.Point(12, 12);
             this.pnlDados.Name = "pnlDados";
             this.pnlDados.Size = new System.Drawing.Size(203, 270);
-            this.pnlDados.TabIndex = 0;
+            this.pnlDados.TabIndex = 2;
             // 
             // lblDados
             // 
@@ -161,26 +161,26 @@
             this.lblDados.TabIndex = 0;
             this.lblDados.Text = "Dados";
             // 
-            // pnl
+            // panel1
             // 
-            this.pnl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.pnl.Controls.Add(this.btnLancar);
-            this.pnl.Controls.Add(this.btnExcluir);
-            this.pnl.Controls.Add(this.btnAtualizar);
-            this.pnl.Controls.Add(this.textSenha);
-            this.pnl.Controls.Add(this.lblSenha);
-            this.pnl.Controls.Add(this.txtEmail);
-            this.pnl.Controls.Add(this.lblEmail);
-            this.pnl.Controls.Add(this.txtNome);
-            this.pnl.Controls.Add(this.lblNome);
-            this.pnl.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.pnl.Location = new System.Drawing.Point(0, 52);
-            this.pnl.Name = "pnl";
-            this.pnl.Size = new System.Drawing.Size(203, 218);
-            this.pnl.TabIndex = 1;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.panel1.Controls.Add(this.btnLancar);
+            this.panel1.Controls.Add(this.btnExcluir);
+            this.panel1.Controls.Add(this.btnAtualizar);
+            this.panel1.Controls.Add(this.textEndereco);
+            this.panel1.Controls.Add(this.lblEndereço);
+            this.panel1.Controls.Add(this.txtTelefone);
+            this.panel1.Controls.Add(this.lblTelefone);
+            this.panel1.Controls.Add(this.txtIDusuario);
+            this.panel1.Controls.Add(this.lblID_usuario);
+            this.panel1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(0, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(203, 218);
+            this.panel1.TabIndex = 1;
             // 
             // btnLancar
             // 
@@ -227,124 +227,125 @@
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
             // 
-            // textSenha
+            // textEndereco
             // 
-            this.textSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textSenha.Location = new System.Drawing.Point(3, 116);
-            this.textSenha.Name = "textSenha";
-            this.textSenha.Size = new System.Drawing.Size(197, 20);
-            this.textSenha.TabIndex = 5;
+            this.textEndereco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textEndereco.Location = new System.Drawing.Point(3, 116);
+            this.textEndereco.Name = "textEndereco";
+            this.textEndereco.Size = new System.Drawing.Size(197, 20);
+            this.textEndereco.TabIndex = 5;
             // 
-            // lblSenha
+            // lblEndereço
             // 
-            this.lblSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblEndereço.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
-            this.lblSenha.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSenha.Location = new System.Drawing.Point(4, 94);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(62, 19);
-            this.lblSenha.TabIndex = 4;
-            this.lblSenha.Text = "Senha:";
+            this.lblEndereço.AutoSize = true;
+            this.lblEndereço.BackColor = System.Drawing.Color.Transparent;
+            this.lblEndereço.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereço.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblEndereço.Location = new System.Drawing.Point(4, 94);
+            this.lblEndereço.Name = "lblEndereço";
+            this.lblEndereço.Size = new System.Drawing.Size(85, 19);
+            this.lblEndereço.TabIndex = 4;
+            this.lblEndereço.Text = "Endereço";
             // 
-            // txtEmail
+            // txtTelefone
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Location = new System.Drawing.Point(3, 71);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(197, 20);
-            this.txtEmail.TabIndex = 3;
+            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTelefone.Location = new System.Drawing.Point(3, 71);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(197, 20);
+            this.txtTelefone.TabIndex = 3;
             // 
-            // lblEmail
+            // lblTelefone
             // 
-            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmail.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblEmail.Location = new System.Drawing.Point(4, 49);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(61, 19);
-            this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Email:";
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefone.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTelefone.Location = new System.Drawing.Point(4, 49);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(82, 19);
+            this.lblTelefone.TabIndex = 2;
+            this.lblTelefone.Text = "Telefone:";
             // 
-            // txtNome
+            // txtIDusuario
             // 
-            this.txtNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtIDusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNome.Location = new System.Drawing.Point(3, 26);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(197, 20);
-            this.txtNome.TabIndex = 1;
+            this.txtIDusuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIDusuario.Location = new System.Drawing.Point(3, 26);
+            this.txtIDusuario.Name = "txtIDusuario";
+            this.txtIDusuario.Size = new System.Drawing.Size(197, 20);
+            this.txtIDusuario.TabIndex = 1;
             // 
-            // lblNome
+            // lblID_usuario
             // 
-            this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblID_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNome.Location = new System.Drawing.Point(4, 4);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(60, 19);
-            this.lblNome.TabIndex = 0;
-            this.lblNome.Text = "Nome:";
+            this.lblID_usuario.AutoSize = true;
+            this.lblID_usuario.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID_usuario.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblID_usuario.Location = new System.Drawing.Point(4, 4);
+            this.lblID_usuario.Name = "lblID_usuario";
+            this.lblID_usuario.Size = new System.Drawing.Size(101, 19);
+            this.lblID_usuario.TabIndex = 0;
+            this.lblID_usuario.Text = "ID_usuario:";
             // 
-            // FormUsuarios
+            // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(784, 294);
-            this.Controls.Add(this.pnlUsuarios);
+            this.Controls.Add(this.pnlClientes);
             this.Controls.Add(this.pnlDados);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormUsuarios";
-            this.Text = "FormRelatórios";
-            this.pnlUsuarios.ResumeLayout(false);
-            this.pnlUsuarios.PerformLayout();
+            this.Name = "FormClientes";
+            this.Text = "FormClientes";
+            this.pnlClientes.ResumeLayout(false);
+            this.pnlClientes.PerformLayout();
             this.pnlPesquisa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
-            this.pnl.ResumeLayout(false);
-            this.pnl.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel pnlUsuarios;
-        private System.Windows.Forms.Panel pnlDados;
-        private System.Windows.Forms.Panel pnl;
-        private System.Windows.Forms.Label lblDados;
-        private System.Windows.Forms.TextBox textSenha;
-        private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.ListView lvUsuarios;
-        private System.Windows.Forms.Label lblUsuarios;
+
+        private System.Windows.Forms.Panel pnlClientes;
+        private System.Windows.Forms.Panel pnlPesquisa;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtPesquisa;
+        private System.Windows.Forms.Label lblClientes;
+        private System.Windows.Forms.ListView lvClientes;
+        private System.Windows.Forms.Panel pnlDados;
+        private System.Windows.Forms.Label lblDados;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLancar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAtualizar;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel pnlPesquisa;
+        private System.Windows.Forms.TextBox textEndereco;
+        private System.Windows.Forms.Label lblEndereço;
+        private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.TextBox txtIDusuario;
+        private System.Windows.Forms.Label lblID_usuario;
     }
 }
