@@ -31,17 +31,17 @@
             this.pnlMenuTop = new System.Windows.Forms.Panel();
             this.lblServicos = new System.Windows.Forms.Label();
             this.pnlLogo = new System.Windows.Forms.Panel();
-            this.picboxLogo = new System.Windows.Forms.PictureBox();
             this.pnlSubTitles = new System.Windows.Forms.Panel();
             this.btnCursos = new System.Windows.Forms.Button();
             this.btnProfissionais = new System.Windows.Forms.Button();
             this.btnShows = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.pnlChildForm = new System.Windows.Forms.Panel();
+            this.picboxLogo = new System.Windows.Forms.PictureBox();
             this.pnlMenuTop.SuspendLayout();
             this.pnlLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxLogo)).BeginInit();
             this.pnlSubTitles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuTop
@@ -74,19 +74,6 @@
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(147, 43);
             this.pnlLogo.TabIndex = 6;
-            // 
-            // picboxLogo
-            // 
-            this.picboxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picboxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picboxLogo.Image = global::MusicStationForms.Properties.Resources.music_station_vetorizada_1__1_;
-            this.picboxLogo.Location = new System.Drawing.Point(0, 0);
-            this.picboxLogo.Name = "picboxLogo";
-            this.picboxLogo.Size = new System.Drawing.Size(144, 40);
-            this.picboxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxLogo.TabIndex = 5;
-            this.picboxLogo.TabStop = false;
-            this.picboxLogo.Click += new System.EventHandler(this.picboxLogo_Click);
             // 
             // pnlSubTitles
             // 
@@ -127,6 +114,7 @@
             this.btnProfissionais.TabIndex = 11;
             this.btnProfissionais.Text = "Profissionais";
             this.btnProfissionais.UseVisualStyleBackColor = false;
+            this.btnProfissionais.Click += new System.EventHandler(this.btnProfissionais_Click);
             // 
             // btnShows
             // 
@@ -165,6 +153,19 @@
             this.pnlChildForm.Size = new System.Drawing.Size(800, 333);
             this.pnlChildForm.TabIndex = 14;
             // 
+            // picboxLogo
+            // 
+            this.picboxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picboxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picboxLogo.Image = global::MusicStationForms.Properties.Resources.music_station_vetorizada_1__1_;
+            this.picboxLogo.Location = new System.Drawing.Point(0, 0);
+            this.picboxLogo.Name = "picboxLogo";
+            this.picboxLogo.Size = new System.Drawing.Size(144, 40);
+            this.picboxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxLogo.TabIndex = 5;
+            this.picboxLogo.TabStop = false;
+            this.picboxLogo.Click += new System.EventHandler(this.picboxLogo_Click);
+            // 
             // FormServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,8 +179,8 @@
             this.pnlMenuTop.ResumeLayout(false);
             this.pnlMenuTop.PerformLayout();
             this.pnlLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picboxLogo)).EndInit();
             this.pnlSubTitles.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picboxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

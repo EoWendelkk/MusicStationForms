@@ -48,7 +48,7 @@ namespace MusicStationForms
         private void picboxLogo_Click(object sender, EventArgs e)
         {
             FormMenu menu = new FormMenu();
-            menu.Show(this);
+            menu.Show();
             this.Close();
         }
 
@@ -59,7 +59,12 @@ namespace MusicStationForms
 
         private void btnProdutos_Click(object sender, EventArgs e)
         {
-            openChildForm((new FormProdutos());
+            openChildForm(new FormProdutos());
+        }
+
+        private void btnProfissionais_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormProfissionais());
         }
     }
 }

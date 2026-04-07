@@ -37,6 +37,7 @@
             this.pnlDados = new System.Windows.Forms.Panel();
             this.lblDados = new System.Windows.Forms.Label();
             this.pnl = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnLancar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.lblObservacoes = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pnlUsuarios.SuspendLayout();
             this.pnlPesquisa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -182,6 +182,14 @@
             this.pnl.Size = new System.Drawing.Size(203, 218);
             this.pnl.TabIndex = 1;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 26);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(197, 21);
+            this.comboBox1.TabIndex = 9;
+            // 
             // btnLancar
             // 
             this.btnLancar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -292,14 +300,6 @@
             this.lblStatus.Size = new System.Drawing.Size(63, 19);
             this.lblStatus.TabIndex = 0;
             this.lblStatus.Text = "Status:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 26);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(197, 21);
-            this.comboBox1.TabIndex = 9;
             // 
             // FormPedidos
             // 

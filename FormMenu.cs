@@ -17,6 +17,7 @@ namespace MusicStationForms
             InitializeComponent();
         }
 
+        //Vai pra área Controle
         private void btnControle_Click(object sender, EventArgs e)
         {
             FormControle controle = new FormControle();
@@ -24,10 +25,33 @@ namespace MusicStationForms
             this.Close();
         }
 
+        //Vai pra área Serviços
         private void btnServicos_Click(object sender, EventArgs e)
         {
-            FormServicos controle = new FormServicos();
-            controle.Show();
+            FormServicos servicos = new FormServicos();
+            servicos.Show();
+            this.Close();
+        }
+
+        //Vai pra área de Relatórios
+        private void btnRelatorios_Click(object sender, EventArgs e)
+        {
+            FormRelatorios relatorios = new FormRelatorios();
+            relatorios.Show();
+            this.Close();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            FormLogin sair = new FormLogin();
+            sair.Show();
+            this.Close();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            FormDashboard dashboard = new FormDashboard();
+            dashboard.Show();
             this.Close();
         }
     }

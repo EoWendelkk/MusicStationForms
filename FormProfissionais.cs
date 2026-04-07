@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace MusicStationForms
 {
-    public partial class FormShows : Form
+
+    public partial class FormProfissionais : Form
     {
-        // Guarda todos os itens para poder filtrar corretamente
         private List<ListViewItem> itensOriginais = new List<ListViewItem>();
-        public FormShows()
+
+        public FormProfissionais()
         {
             InitializeComponent();
             ConfigurarListView();
@@ -24,16 +25,18 @@ namespace MusicStationForms
 
         private void ConfigurarListView()
         {
-            lvShows.Columns.Clear();
-            lvShows.View = View.Details;
-            lvShows.FullRowSelect = true;
-            lvShows.GridLines = true;
-            lvShows.MultiSelect = false;
-            lvShows.Columns.Add("ID", 80);
-            lvShows.Columns.Add("ID_PROFISSIONAL", 150);
-            lvShows.Columns.Add("NOME", 200);
-            lvShows.Columns.Add("PREÇO", 100);
-            lvShows     .Columns.Add("STATUS", 150);
+            lvProfissionais.Columns.Clear();
+            lvProfissionais.View = View.Details;
+            lvProfissionais.FullRowSelect = true;
+            lvProfissionais.GridLines = true;
+            lvProfissionais.MultiSelect = false;
+            lvProfissionais.Columns.Add("ID", 80);
+            lvProfissionais.Columns.Add("ID_USUÁRIO", 150);
+            lvProfissionais.Columns.Add("NOME", 200);
+            lvProfissionais.Columns.Add("TELEFONE", 20);
+            lvProfissionais.Columns.Add("ESPECIALIDADES", 150);
+            lvProfissionais.Columns.Add("PREÇO", 100);
+
         }
 
         // ================== FILTRO ================== \\
@@ -48,16 +51,16 @@ namespace MusicStationForms
 
         private void FiltrarListView(string texto)
         {
-            lvShows.BeginUpdate();
-            lvShows.Items.Clear();
+            lvProfissionais.BeginUpdate();
+            lvProfissionais.Items.Clear();
 
             // Se o texto estiver vazio, mostra tudo novamente
             if (string.IsNullOrWhiteSpace(texto))
             {
                 foreach (var item in itensOriginais)
-                    lvShows.Items.Add((ListViewItem)item.Clone());
+                    lvProfissionais.Items.Add((ListViewItem)item.Clone());
 
-                lvShows.EndUpdate();
+                lvProfissionais.EndUpdate();
                 return;
             }
 
@@ -76,10 +79,10 @@ namespace MusicStationForms
                 }
 
                 if (encontrado)
-                    lvShows.Items.Add((ListViewItem)item.Clone());
+                    lvProfissionais.Items.Add((ListViewItem)item.Clone());
             }
 
-            lvShows.EndUpdate();
+            lvProfissionais.EndUpdate();
         }
 
         // ================== PLACEHOLDER DO TEXTBOX DE PESQUISA ================== \\

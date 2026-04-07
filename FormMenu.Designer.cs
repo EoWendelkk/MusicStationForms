@@ -34,14 +34,14 @@
             this.btnControle = new System.Windows.Forms.Button();
             this.btnRelatorios = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnPerfil = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSair = new System.Windows.Forms.Button();
             this.btnServicos = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.pnlPerfil.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -101,6 +101,7 @@
             this.btnRelatorios.TabIndex = 6;
             this.btnRelatorios.Text = "Relatórios";
             this.btnRelatorios.UseVisualStyleBackColor = false;
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // btnDashboard
             // 
@@ -114,31 +115,21 @@
             this.btnDashboard.TabIndex = 7;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // btnPerfil
+            // btnSair
             // 
-            this.btnPerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(20)))), ((int)(((byte)(71)))));
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Font = new System.Drawing.Font("News706 BT", 20.25F, System.Drawing.FontStyle.Bold);
-            this.btnPerfil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.btnPerfil.Location = new System.Drawing.Point(300, 342);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(203, 61);
-            this.btnPerfil.TabIndex = 8;
-            this.btnPerfil.Text = "Perfil";
-            this.btnPerfil.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::MusicStationForms.Properties.Resources.music_station_vetorizada_1__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(283, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(232, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(20)))), ((int)(((byte)(71)))));
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("News706 BT", 20.25F, System.Drawing.FontStyle.Bold);
+            this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
+            this.btnSair.Location = new System.Drawing.Point(300, 342);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(203, 61);
+            this.btnSair.TabIndex = 8;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnServicos
             // 
@@ -162,6 +153,18 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::MusicStationForms.Properties.Resources.music_station_vetorizada_1__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(283, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(232, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,7 +172,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(799, 451);
             this.Controls.Add(this.btnServicos);
-            this.Controls.Add(this.btnPerfil);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.btnRelatorios);
             this.Controls.Add(this.btnControle);
@@ -181,8 +184,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pnlPerfil.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -194,7 +197,7 @@
         private System.Windows.Forms.Button btnControle;
         private System.Windows.Forms.Button btnRelatorios;
         private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnPerfil;
+        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnServicos;
         private System.Windows.Forms.Panel pnlPerfil;
         private System.Windows.Forms.PictureBox pictureBox2;
