@@ -50,28 +50,31 @@
             this.pnlMenuTop.Controls.Add(this.pnlLogo);
             this.pnlMenuTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMenuTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenuTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMenuTop.Name = "pnlMenuTop";
-            this.pnlMenuTop.Size = new System.Drawing.Size(800, 46);
+            this.pnlMenuTop.Size = new System.Drawing.Size(1067, 57);
             this.pnlMenuTop.TabIndex = 5;
             // 
             // lblControle
             // 
             this.lblControle.AutoSize = true;
             this.lblControle.BackColor = System.Drawing.Color.Transparent;
-            this.lblControle.Font = new System.Drawing.Font("Swis721 Blk BT", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblControle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblControle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.lblControle.Location = new System.Drawing.Point(302, 4);
+            this.lblControle.Location = new System.Drawing.Point(417, 5);
+            this.lblControle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblControle.Name = "lblControle";
-            this.lblControle.Size = new System.Drawing.Size(181, 42);
+            this.lblControle.Size = new System.Drawing.Size(219, 52);
             this.lblControle.TabIndex = 0;
-            this.lblControle.Text = "Controle";
+            this.lblControle.Text = "Relatórios";
             // 
             // pnlLogo
             // 
             this.pnlLogo.Controls.Add(this.picboxLogo);
-            this.pnlLogo.Location = new System.Drawing.Point(3, 3);
+            this.pnlLogo.Location = new System.Drawing.Point(4, 4);
+            this.pnlLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(147, 43);
+            this.pnlLogo.Size = new System.Drawing.Size(196, 53);
             this.pnlLogo.TabIndex = 6;
             // 
             // picboxLogo
@@ -80,8 +83,9 @@
             this.picboxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picboxLogo.Image = global::MusicStationForms.Properties.Resources.music_station_vetorizada_1__1_;
             this.picboxLogo.Location = new System.Drawing.Point(0, 0);
+            this.picboxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picboxLogo.Name = "picboxLogo";
-            this.picboxLogo.Size = new System.Drawing.Size(144, 40);
+            this.picboxLogo.Size = new System.Drawing.Size(192, 49);
             this.picboxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picboxLogo.TabIndex = 5;
             this.picboxLogo.TabStop = false;
@@ -93,9 +97,10 @@
             this.cboEscolha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboEscolha.ForeColor = System.Drawing.SystemColors.Menu;
             this.cboEscolha.FormattingEnabled = true;
-            this.cboEscolha.Location = new System.Drawing.Point(12, 90);
+            this.cboEscolha.Location = new System.Drawing.Point(16, 111);
+            this.cboEscolha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboEscolha.Name = "cboEscolha";
-            this.cboEscolha.Size = new System.Drawing.Size(149, 21);
+            this.cboEscolha.Size = new System.Drawing.Size(197, 24);
             this.cboEscolha.TabIndex = 6;
             this.cboEscolha.Text = "Escolha o Relatório";
             this.cboEscolha.SelectedIndexChanged += new System.EventHandler(this.cboTipoRelatorio_SelectedIndexChanged);
@@ -105,9 +110,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.label1.Location = new System.Drawing.Point(13, 53);
+            this.label1.Location = new System.Drawing.Point(17, 65);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 24);
+            this.label1.Size = new System.Drawing.Size(212, 29);
             this.label1.TabIndex = 7;
             this.label1.Text = "Filtro de Relatório:";
             // 
@@ -117,9 +123,10 @@
             this.cboPeriodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboPeriodo.ForeColor = System.Drawing.SystemColors.Menu;
             this.cboPeriodo.FormattingEnabled = true;
-            this.cboPeriodo.Location = new System.Drawing.Point(186, 88);
+            this.cboPeriodo.Location = new System.Drawing.Point(248, 108);
+            this.cboPeriodo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboPeriodo.Name = "cboPeriodo";
-            this.cboPeriodo.Size = new System.Drawing.Size(174, 21);
+            this.cboPeriodo.Size = new System.Drawing.Size(231, 24);
             this.cboPeriodo.TabIndex = 8;
             this.cboPeriodo.Text = "Período";
             // 
@@ -128,9 +135,10 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(182)))), ((int)(((byte)(34)))));
-            this.button1.Location = new System.Drawing.Point(649, 88);
+            this.button1.Location = new System.Drawing.Point(865, 108);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 23);
+            this.button1.Size = new System.Drawing.Size(185, 28);
             this.button1.TabIndex = 9;
             this.button1.Text = "Gerar relatório";
             this.button1.UseVisualStyleBackColor = false;
@@ -143,26 +151,28 @@
             this.lvRelatorios.FullRowSelect = true;
             this.lvRelatorios.GridLines = true;
             this.lvRelatorios.HideSelection = false;
-            this.lvRelatorios.Location = new System.Drawing.Point(13, 136);
+            this.lvRelatorios.Location = new System.Drawing.Point(17, 167);
+            this.lvRelatorios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvRelatorios.MultiSelect = false;
             this.lvRelatorios.Name = "lvRelatorios";
-            this.lvRelatorios.Size = new System.Drawing.Size(775, 284);
+            this.lvRelatorios.Size = new System.Drawing.Size(1032, 349);
             this.lvRelatorios.TabIndex = 10;
             this.lvRelatorios.UseCompatibleStateImageBehavior = false;
             this.lvRelatorios.View = System.Windows.Forms.View.Details;
             // 
             // FormRelatorios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(24)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.lvRelatorios);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cboPeriodo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboEscolha);
             this.Controls.Add(this.pnlMenuTop);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormRelatorios";
             this.Text = "FormRelatorios";
             this.pnlMenuTop.ResumeLayout(false);

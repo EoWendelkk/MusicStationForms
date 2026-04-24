@@ -21,7 +21,7 @@ namespace MusicStationForms
         {
             FormMenu menu = new FormMenu();
             menu.Show();
-            this.Hide();
+           
         }
     }
 }

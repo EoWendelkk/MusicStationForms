@@ -43,8 +43,6 @@ namespace MusicStationForms
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            FormLogin sair = new FormLogin();
-            sair.Show();
             this.Close();
         }
 
